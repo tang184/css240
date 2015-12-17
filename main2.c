@@ -14,12 +14,12 @@
 int a[] = {45, 23, 78, 12, 100, 1, 100, 34, 90, 78 };
 
 
-int* addInt( void * a, void * b , int *sum)
+void * addInt( void * a, void * b , void *sum)
 {
     //printf("%d\n", *(int*)a);
     //printf("%d\n", *(int*)b);
-    *sum = *(int*)a + *(int*)b;
-    return sum;
+    int *abc = (int *) sum;
+    *abc = *(int*)a + *(int*)b;
 }
 
 int compareInt( void * a, void * b )

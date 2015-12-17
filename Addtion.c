@@ -16,7 +16,7 @@ void sumArray(int n, int elementSize, void * array, void * sum, Addition additio
     for ( i = 0; i < n; i++) {
         void *m = (void*) ((char*) array + i * elementSize);
         void *p = (void*) ((char*)  sum);
-        sum = (void*) addition(m,p, sum);
+        addition(m,p, sum);
         //printf("%p\n", sum);
         //printf("%d\n", *(int*)sum);
     }
