@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-typedef int* (*Addition) (void *a, void *b, int *t);
+typedef void (*Addition) (void *a, void *b, void *t);
 
 
 void sumArray(int n, int elementSize, void * array, void * sum, Addition addition);

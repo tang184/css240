@@ -14,7 +14,7 @@
 int a[] = {45, 23, 78, 12, 100, 1, 100, 34, 90, 78 };
 
 
-void * addInt( void * a, void * b , void *sum)
+void addInt( void * a, void * b , void *sum)
 {
     //printf("%d\n", *(int*)a);
     //printf("%d\n", *(int*)b);
